@@ -4,21 +4,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio Website - Syafira</title>
+    <title>Portofolio Website LokaSelkara - Syafira</title>
 
     <!-- CSS External -->
     <link rel="stylesheet" href="css\style.css">
+
 </head>
 
 <body>
     <!-- Header Content -->
-    <header></header>
+    <header class="container">
+        <!-- Logo Website -->
+        <div class="main-logo">
+            <img src="../assets/logos.jpg" alt="icon selkara" width=35" height="30"/>
+        </div>
+
+        <!-- Navbar (Navigation) -->
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#my-profile">My Profile</a>
+            <a href="#about-me">About Selkara</a>
+            <a href="#message-us">Message Us</a>
+        </nav>
+    </header>
+    <hr/>
 
     <!-- Main Content-->
-    <main></main>
+    <main>
+        <!--  Home Section -->
+        <section id="home">
+            <h1>(❁´◡`❁) Hi there, Welcome to My Portfolio Website!</h1>
+            <h4><p>Selkara is random thing all about me, hope you enjoy it and gracias </p></h4>
 
-    <!-- Footer Content-->
-    <footer></footer>
+            <!-- Banner Section -->
+             <div class="banner-img img-1"></div>
+             <div class="banner-img img-2"></div>
+             <div class="banner-img img-3"></div>
+             
+             <button onclick="nextBanner">Next Banner</button>
+        </section>    
+        <br />
+        <hr>
+
+        <!-- Our Profile Section -->
+        <section id="my-profile">
+            <h1>My Profile</h1>
+            <p>I'm Asyra part of Loka Selkara as voice over and writer the poems in here.</p> 
+        </section>
+        <hr />
+
+        <!-- About Me Section -->
+        <section id="about-me">
+            <h1>About Selkara</h1>
+            <p>Loka Selkara adalah untaian kata yang dibalut dengan gema dalam
+            nuansa penyair yang sulit untuk diungkapkan, namun terasa dalam sukma.</p>
+        </section>
+        <hr />
+
+        <!-- Message Us Section -->
+        <section id="message-us" class="container">
+            <h1>Message Us</h1>
+            <p>If you have any questions, feel free to reach out!</p>
+            
+            <!-- Form Text Box -->
+            <form>
+                <br>
+                <h4>Message Me</h4> 
+                <div class ="grid">
+                    <form class="border-form col-span-half contact-form">
+              <!-- Form Name -->
+              <section class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" minlength="3" autocomplete="off" required>
+              </section>
+
+              <!-- Form Birth Date -->
+              <section class="form-group col-span-half">
+                <label for="birth-date">Birth Date:</label>
+                <input type="date" id="birth-date" name="birth-date" required>
+              </section>
+
+              <!-- Form: This is Choose Your Gender -->
+              <section class="form-group col-span-half">
+                <label for="gender">Gender:</label>
+                <div class="gender">
+                <input type="radio" value="male" id="male" name="gender" required>
+                <label for="male">Male</label>
+                <input type="radio" value="female" id="female" name="gender" required>
+                <label for="female">Female</label>
+                </div>
+              </section>
+            </div>
+
+             <!-- Form: This is Message -->
+              <section class="form-group">
+                <label for="message-us">Message:</label>
+                <textarea name="message-us" id="message-us" required></textarea>
+            </section>
+
+                <div>
+                    <button onclick="validateForm();" type="button">submit</button>
+                </div>
+            </form>
+
+            <!-- Show the Result of Message Form -->
+            <div class="border-form col-span-half">
+                <!-- Name -->
+                <section class="form-group">
+                    <span>Name:</span>
+                    <div class="border-input" id="submit-name">
+                    </div>
+                </section>
+                <div class="grid">  
+
+                <!-- Birth Date -->
+                <section class="form-group col-span-half">
+                <span>Birth Date:</span>
+                <div class="border-input" id="submit-birth-date">
+                </div>
+            </section>
+            
+                <!-- Gender -->
+                <section class="form-group col-span-half">
+                <span>Gender:</span>
+                <div class="border-input" id="submit-gender">
+                </div>
+            </section>
+
+                <!-- Message -->
+                <section class="form-group">
+                <span>Message:</span>
+                <div class="border-input" id="submit-message-us"></div>
+                </div>
+            </section>
+            </div>
+        </div>
+    </section>
+</div>
+</section>
+</main>
+ 
+
+<!-- Footer Content-->
+<footer class="container">
+        <p>Copyright &copy; 2025. Syafira-Selkara. All rights reserved</p>
+</footer>
+    
+    <!-- JS External -->
+    <script src="js\script.js"></script>
 </body>
 
 </html>
