@@ -1,0 +1,77 @@
+/* Header Component */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-logo {
+    height: 50px;
+    width: 50px;
+    background-image: url(../assets/logos.jpg);
+}
+
+html {
+  scroll-padding-top: 100px;
+  scroll-behavior: smooth;
+}
+
+/* Navbar Component */
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav>a {
+    border: 1.5px solid;
+    padding: 5px;
+    color: rgba(63, 42, 19, 0.837);
+    border-radius: 7px;
+    text-decoration: 4px;
+}
+
+section {
+    height: 550px;
+}
+
+body {
+    font-family:"Cambria", Georgia, sans-serif;
+    background-color: rgba(235, 191, 234, 0.169);
+    margin: 15px 0px;
+    overflow-x: hidden;
+}
+
+/* Banner Section */
+.banner-img {
+    width: 1000px;
+    height: 435px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+}
+
+.img-1 {
+    background-image: url(../assets/2.jpeg);
+}
+.img-2 {
+    background-image: url(../assets/1.jpeg);
+}
+.img-3 {
+    background-image: url(../assets/3.jpg);
+}
+
+h1 {
+  font-size: 45px;
+  font-weight: 1000;
+  text-align: center;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 750;
+  text-align: center;
+}
+
+/* Footer Component */
+footer {
+    text-align: center;
+}
